@@ -8,7 +8,8 @@ public class TestController {
 
     @RequestMapping("test")
     public String test() {
-        return "test";
+        String env = System.getenv("env");
+        return "env is :" + env;
     }
 
 
