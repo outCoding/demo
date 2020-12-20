@@ -16,7 +16,7 @@ public class TestController {
         for (String key : map.keySet()) {
             log.info(key + "=" + map.get(key));
         }
-        return "test";
+        return System.getenv("env");
     }
 
 
